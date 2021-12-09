@@ -13,7 +13,7 @@ int main() {
   token = strtok(command, " ");
   if (token == NULL) {exit(-1);}
   arguments[0] = token;
-  for (i = 1; i<10; i++) {
+  while(1) {
     token = strtok(NULL, " ");
     if (token == NULL)
       break;
